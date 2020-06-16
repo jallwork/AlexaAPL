@@ -1,39 +1,32 @@
-Build an Alexa Hello World Skill in ASK Python SDK (using Classes)
+Create an Alexa skill in python that uses Alexa Presentation Language (APL) to display on an Alexa screen
 =========================================
 
-This tutorial will walk first-time Alexa skills developers through all the 
-required steps involved in creating a skill using this hello world template, 
-called ‘hello world’. This post assumes you have some familiarity with 
-Python (or a similar programming language) and the Alexa Skills Kit.
+This tutorial walks through creating an Alexa skill in Python using the ASK - CLI. 
 
-<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
+It assumes you have some familiarity with Python (or a similar programming language) and the Alexa Skills Kit.
+Even if you're using an Alexa Hosted skill or AWS Lambda skill, the Python parts are the same.
+
+Please note that this is the first github I've posted, so bear with me if there are problems!
 
 Concepts
 --------
 
-This simple sample has no external dependencies or session management,
-and shows the most basic example of how to create a Lambda function for
-handling Alexa Skill requests.
+This is a simple example so that you can understand the basics of APL, modifying the python code to add a directive and testing the code in the developer or on a device.
+The actual APL only shows some text on the screen but having got that far, they are plenty of examples of more complicated APL that you can look at!
+
+It closely follows the NodeJS blog by Stuart Pocklington, which I urge you to read:
+https://medium.com/@punkpocko/alexa-presentation-language-293f8cf25a09
 
 Setup
 -----
 
-To run this example skill you need to do two things. The first is to
-deploy the example code in lambda, and the second is to configure the
-Alexa skill to use Lambda.
+To run this example skill you will need to setup ASK CLI and choose an editing environment (I use Visual Studio) 
 
-[![Get Started](https://camo.githubusercontent.com/db9b9ce26327ad3bac57ec4daf0961a382d75790/68747470733a2f2f6d2e6d656469612d616d617a6f6e2e636f6d2f696d616765732f472f30312f6d6f62696c652d617070732f6465782f616c6578612f616c6578612d736b696c6c732d6b69742f7475746f7269616c732f67656e6572616c2f627574746f6e732f627574746f6e5f6765745f737461727465642e5f5454485f2e706e67)](./instructions/1-voice-user-interface.md)
+The text version of this is in the instruction section but the full word document, including screenshots is available at:
+https://johnallwork.weebly.com/uploads/1/2/1/0/121036582/pythonaplinstructions.docx
 
-Skills can be built either by implementing ``AbstractRequestHandler`` classes
-or by using skill builder's ``request_handler`` decorator. More information
-on this can be checked in the [documentation](https://alexa-skills-kit-python-sdk.readthedocs.io/en/latest/REQUEST_PROCESSING.html#request-handlers).
+I apologise if that's not in the scheme of github
 
-This sample skill shows how to implement ``AbstractRequestHandler`` class 
-and register the handler classes explicitly in the skill builder object. 
-The code for this implementation is under [lambda/py](lambda/py) folder.
-
-For the sample skill using the ``decorators`` approach, check 
-[skill-sample-python-helloworld-decorators](https://github.com/alexa/skill-sample-python-helloworld-decorators).
 
 Additional Resources
 --------------------
