@@ -1,0 +1,10 @@
+{
+  "type": "APL",
+  "version": "1.3",
+  "mainTemplate": {
+    "item": {
+      "type": "Text",
+      "text": "Hello, John's world"
+    }
+  }
+}
