@@ -36,7 +36,7 @@
           }
         ],
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:559144307262:function:ask-alexaapl-default-default-1592041646090"
+          "uri": "arn:aws:lambda:us-east-1:559144312345:function:ask-alexaapl-default-default-1592041646090"
         }
       }
     },
